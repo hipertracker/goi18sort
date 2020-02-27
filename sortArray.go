@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func sorted(arr []string, lang string) {
+func sortArray(arr []string, lang string) {
 	less := collate.IndexString(lang)
 	sort.SliceStable(arr, func(i, j int) bool {
 		return less(arr[i], arr[j])
